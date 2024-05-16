@@ -20,7 +20,6 @@ public class ArraySort02 {
 		// 바깥 반복문이 회전수
 		// 안쪽 반복문이 자리변경
 
-		
 //		for (int i = 0; i < arr.length - 1; i++) {
 //
 //			for (int j = 0; j < arr.length - i - 1; j++) {
@@ -36,9 +35,22 @@ public class ArraySort02 {
 //			System.out.println(Arrays.toString(arr));
 //
 //		}
-		
-		
-		//퀵 정렬 - 가장빠른 정렬
+
+		for (int i = 0; i < arr.length; i++) {
+
+			for (int j = 0; j < arr.length -i -1; j++) {
+
+				if (arr[j] > arr[j + 1]) {
+					int temp = arr[j];
+					arr[j] = arr[j + 1];
+					arr[j + 1] = temp;
+
+				}
+			}
+		}
+		System.out.println(Arrays.toString(arr));
+
+		// 퀵 정렬 - 가장빠른 정렬
 		Arrays.sort(arr);
 		System.out.println(Arrays.toString(arr));
 

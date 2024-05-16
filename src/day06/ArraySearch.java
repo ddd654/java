@@ -13,7 +13,7 @@ public class ArraySearch {
 			if (arr[i] == find) {// 찾음
 				findIndex = i;
 				break; // 뒤에 중복나와서 탈출
-
+				
 			}
 		}
 
