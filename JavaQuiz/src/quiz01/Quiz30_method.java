@@ -3,9 +3,11 @@ package quiz01;
 public class Quiz30_method {
 	public static void main(String[] args) {
 
-		System.out.println(java(1));
+		System.out.println(java(3));
 
-		sum(1);
+		System.out.println(sum(4));
+
+		System.out.println(primeNum(1, 5));
 
 	}
 	// 1.java()
@@ -16,12 +18,13 @@ public class Quiz30_method {
 //	 매개변수 4 로 "자바자바"를 return
 
 	static String java(int a) {
+		String str = "";
+
 		for (int i = 1; i <= a; i++) {
-			String str = "";
 			if (i % 2 == 0) {
-				str = "바";
+				str += "바";
 			} else {
-				str = "자";
+				str += "자";
 			}
 		}
 		return str;
@@ -36,7 +39,13 @@ public class Quiz30_method {
 	// 6 >> return 1 + 2 + 3+ 6
 
 	static int sum(int a) {
-
+		int sum = 0;
+		for (int i = 1; i <= a; i++) {
+			if (a % i == 0) {
+				sum += i;
+			}
+		}
+		return sum;
 	}
 
 	// primeNum() 매개변수 두개 받아서,
@@ -45,5 +54,36 @@ public class Quiz30_method {
 	// 1, 2 >> return 1+2;
 	// 2, 1 >> return 1+2;
 	// 1>> 0
+
+//	static int primeNum(int num1, int num2) {
+//		int sum = 0;
+//
+//		if (num1 < num2) {
+//			for (int i = num1; i <= num2; i++) {
+//				sum += i;
+//			}
+//		} else {
+//			for (int i = num2; i <= num1; i++) {
+//				sum += i;
+//			}
+//		}
+//
+//		return sum;
+//	}
+
+	static int primeNum(int a, int b) {
+		
+		if( a== b) return 0;
+
+		int max = a > b ? a : b;
+		int min = a < b ? b : a;
+		int sum = 0;
+
+		for(int i = min; i <= max; i++) {
+			sum += i;
+		}
+		
+		return sum;
+	}
 
 }
