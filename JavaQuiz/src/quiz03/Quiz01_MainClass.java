@@ -12,7 +12,7 @@ public class Quiz01_MainClass {
 		 * circle(int) - pi를 이용해서 원의 넓이를 리턴하는 기능  (원의넓이: PI * r * r)
 		 * ------------------------------------------------------------------
 		 * Computer 클래스의 메서드
-		 * circle() - 메서드를 오버라이딩 하고,
+		 * circle() - 메서드를 오버라이딩 하고, 
 		 * pi대신 하는 Math.PI를 사용해서 원의 넓이를 구하세요.
 		 * rect(double) - 정사각형의 넓이 를 리턴
 		 * rect(double, double) - 직사각형의 넓이 를 리턴
