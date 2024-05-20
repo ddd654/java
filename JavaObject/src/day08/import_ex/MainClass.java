@@ -2,8 +2,9 @@ package day08.import_ex;
 
 import java.util.Scanner;
 
+
 //import day08.pakage.Apple;
-//전부다 가져온다는 뜻 * <<
+//전부다 가져온다는 뜻 * << 아스타리크
 import day08.pakage.*;
 
 public class MainClass {
