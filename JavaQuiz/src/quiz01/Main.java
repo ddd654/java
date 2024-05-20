@@ -16,13 +16,19 @@ public class Main { // 클래스명 반드시 Main
 		String a = scan.next();
 		int b = scan.nextInt();
 		
-		String str = a;
-		char c = str.charAt(b-1);
+		String arr = a;
+		
 
-		System.out.println(c);
+		for (int i = 1; i < arr.length(); i++) {
+			String c = a.charAt(b - 1);
+
+			System.out.println(c);
+
+		}
+
+		System.out.println(111 * 222);
 		
-		
-		
+
 
 	}
 }

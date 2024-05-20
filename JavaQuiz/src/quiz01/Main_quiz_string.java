@@ -5,12 +5,11 @@ import java.util.Arrays;
 public class Main_quiz_string {
 	public static void main(String[] args) {
 		// 문자열.메서드명() 류
-
 		String str = "안녕~";
 
 		// 문자열에서 인덱스번호인거 가져오기
-		char c = str.charAt(0);
-		System.out.println("0번째 인덱스:" + c);
+		char c = str.charAt(2);
+		System.out.println("2번째 인덱스:" + c);
 		System.out.println("마지막번째:" + c);
 
 		// 문자열 길이
