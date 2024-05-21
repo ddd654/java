@@ -7,7 +7,11 @@ public class Employee extends Person_this {
 	Employee(String name, int age, String department){
 		this.name = name;
 		this.age = age;
+<<<<<<< HEAD
 		this.department = department; 
+=======
+		this.department = department;
+>>>>>>> refs/remotes/origin/JavaObject
 	}
 
 	String info() {

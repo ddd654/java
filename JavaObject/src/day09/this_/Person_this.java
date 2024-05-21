@@ -10,7 +10,10 @@ public class Person_this {
 	// this는 자신의 객체에 접근할때 사용, 멤버변수와 헷갈릴때
 	// 생성자의 연결 - 첫번째 줄에서 this()를 생성자간 연결이 가능
 	Person_this(String name, int age){
+<<<<<<< HEAD
 		
+=======
+>>>>>>> refs/remotes/origin/JavaObject
 		this.name = name;
 		this.age = age;
 //		System.out.println("두개짜리 생성자로 호출");
