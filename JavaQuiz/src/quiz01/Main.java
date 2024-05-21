@@ -1,6 +1,8 @@
 package quiz01;
 
-import java.util.Scanner; //문제 제출할때, import도 필요
+import java.util.Scanner;
+
+//문제 제출할때, import도 필요
 
 public class Main { // 클래스명 반드시 Main
 
@@ -13,22 +15,25 @@ public class Main { // 클래스명 반드시 Main
 
 		Scanner scan = new Scanner(System.in);
 
-		String a = scan.next();
-		int b = scan.nextInt();
+		int num1 = 472;
+		int num2 = 385;
+
+		int a1 = num1 % 10;
+		int a2 = num1 % 100 - a1;
+		int a3 = num1 % 1000 - a1 - a2;
+
+		int b1 = num2 % 10;
+		int b2 = num2 % 100 - b1;
+		int b3 = num2 % 1000 - b1 - b2;
+
+		int c1 = a1 * b1;
+		int c2 = a2 * b2;
+		int c3 = a3 * b3;
+
+		System.out.println(a1 * b1);
+		System.out.println(a2 * b2);
+		System.out.println(a3 * b3);
 		
-		String arr = a;
-		
-
-		for (int i = 1; i < arr.length(); i++) {
-			String c = a.charAt(b - 1);
-
-			System.out.println(c);
-
-		}
-
-		System.out.println(111 * 222);
-		
-
 
 	}
 }
