@@ -30,7 +30,7 @@ public class Main { // 클래스명 반드시 Main
 		int c2 = (a1 * b2) + (a2 * b2) + (a3 * b2);
 		int c3 = (a1 * b3) + (a2 * b3) + (a3 * b3);
 
-		System.out.println(c1);
+		System.out.println(c1); 
 		System.out.println(c2 /10);
 		System.out.println(c3 / 100);
 		
