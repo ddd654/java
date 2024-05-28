@@ -16,7 +16,7 @@ public class Singleton {
 	
 	private static Singleton instance = new Singleton();
 	
-	//3. 클래스 외부에서, 객체를 요구할 때 
+	//3. 클래스 외부에서, 객체를 요구할 때
 	// getter메서드로 1개의 객체를 반환
 	public static Singleton getInstance() {
 		return instance;

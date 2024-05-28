@@ -12,8 +12,8 @@ public class Basic {
 //	int input(int a) {
 //		
 //	}
-	
-<<<<<<< HEAD
+
+
 	//동일한 input인데 중복으로 선언 후 매개변수를 바꿔서 넣기
 	
 	void input(String s) {

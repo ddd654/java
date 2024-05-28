@@ -20,7 +20,7 @@ public class StaticMethod {
 		StaticMethod c= new StaticMethod();
 		c.a = 123;
 		
-		a = 10; //static method02에서 접근 불가
+		int a = 10; //static method02에서 접근 불가
 		b++; //static 붙은 변수에만 접근
 		return b;
 	}

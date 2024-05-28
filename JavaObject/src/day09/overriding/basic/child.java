@@ -14,7 +14,6 @@ public class child extends Parent {
 		System.out.println("자식의 오버라이딩된 메서드 2번");
 	}
 
-=======
 public class child extends Parent{
 
 	//오버라이딩 하기
