@@ -1,4 +1,4 @@
-package ??;
+package quiz10.Interface;
 
 public interface SongList {
 

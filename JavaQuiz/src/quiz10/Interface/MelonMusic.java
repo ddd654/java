@@ -1,4 +1,5 @@
-package ??;
+package quiz10.Interface;
+
 
 public class MelonMusic {
 

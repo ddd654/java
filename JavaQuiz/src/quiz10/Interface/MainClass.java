@@ -1,4 +1,5 @@
-package quiz23;
+package quiz10.Interface;
+
 
 import java.util.Scanner;
 
