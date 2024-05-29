@@ -5,7 +5,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.Scanner;
+import java.util.StringTokenizer;
 
 //문제 제출할때, import도 필요
 
@@ -22,30 +22,42 @@ import java.util.Scanner;
 // car는 Car의 객체이다.
 
 //
-//public static void main(String[] args) throws IOException { //메인함수 예외발생 처리? 이게
+//public static void main(String[] args) throws IOException { //메인함수 예외발생 처리? 이게 뭐지
 //	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //	BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 //	
-////int a = Integer.parseInt(null)
-//	String str = br.readLine();
-//	bw.write(str); // str 출력
-//	bw.flush(); //남은거 비우기
-//	
-}
+//  int로 형변환 하는법
+//  int a = Integer.parseInt(br.readLine());
 
-//클래스 이름이 Main 이여야 오류 안남
+//	String str = br.readLine();
+//	bw.write(sum + "\n"); // 콘솔창에 띄우기
+//  bw.flush(); // 남은거 비우기
+//  br.close(); // 닫기
+
+//클래스 이름이 Main 이여야 문제 오류 안남
 public class Main {
 
 	// main 메서드
-	public static void main(String[] args) throws IOException { //메인함수 예외발생 처리? 이게
+	public static void main(String[] args) throws IOException { // 메인함수 예외발생 처리? 이게
+
+		// 괄호안에다가 System.in으로 콘솔창에서 읽을건지, 파일로 읽는지 등 넣기
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		
-//		int a = Integer.parseInt(null)
-		String str = br.readLine();
-		bw.write(str);// str 출력
-		bw.flush(); //남은거 비우기
-		
+
+		int t = Integer.parseInt(br.readLine());
+
+		int sum = 0;
+		for (int i = 0; i <= t; i++) {
+			int a = Integer.parseInt(br.readLine());
+			int b = Integer.parseInt(br.readLine());
+
+			sum = a + b;
+
+		}
+
+		bw.write(sum + "\n"); // 콘솔창에 띄우기
+		bw.flush(); // 남은거 비우기
+		br.close(); // 닫기
 	}
 
 }

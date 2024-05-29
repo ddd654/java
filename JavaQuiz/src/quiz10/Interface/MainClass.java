@@ -16,6 +16,8 @@ public class MainClass {
 		 */
 		Scanner scan = new Scanner(System.in);
 
+		//BugsMusic
+		SongList s = new MelonMusic();
 				
 		while(true) {
 			System.out.println("메뉴: 1.추가 2.재생 3.종료");
@@ -25,6 +27,10 @@ public class MainClass {
 			if(menu.equals("1")) {
 				System.out.print("추가할 음악>");
 				//음악을 입력받아서, insertList로 음악명을 추가해 주세요.
+				// songlist 인터페이스를 끼고 MelonMusic에 보낸다
+				
+				String song = scan.next();
+				s.insertList(song);
 				
 			} else if(menu.equals("2")) {
 				System.out.print("재생>");
