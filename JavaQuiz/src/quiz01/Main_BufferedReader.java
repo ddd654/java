@@ -36,7 +36,7 @@ import java.util.StringTokenizer;
 //  br.close(); // 닫기
 
 //클래스 이름이 Main 이여야 문제 오류 안남
-public class Main {
+public class Main_BufferedReader {
 
 	// main 메서드
 	public static void main(String[] args) throws IOException { // 메인함수 예외발생 처리? 이게
