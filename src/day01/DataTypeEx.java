@@ -35,7 +35,7 @@ public class DataTypeEx {
 		System.out.println(f1);
 		System.out.println(d1);
 		
-		float f2 = 3.141592653F; 
+		float f2 = 3.141592653F;
 		double d2 = 3.141592653;
 		
 		System.out.println(f2); //실수부분 7자리수 까지 저장
