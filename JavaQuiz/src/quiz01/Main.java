@@ -45,8 +45,6 @@ public class Main {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
 		int t = Integer.parseInt(br.readLine());
-		
-		
 
 		for (int i = 0; i < t; i++) {
 			StringTokenizer token = new StringTokenizer(br.readLine(), " ");
@@ -54,7 +52,7 @@ public class Main {
 			int a = Integer.parseInt(token.nextToken());
 			int b = Integer.parseInt(token.nextToken());
 
-			System.out.println("Case #"+"x: " + a + b);
+			System.out.println("Case #" + (i + 1) + ": " + (a + b));
 		}
 
 	}
