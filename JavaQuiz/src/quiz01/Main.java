@@ -51,8 +51,8 @@ public class Main {
 		for (int i = 0; i < t; i++) {
 			StringTokenizer token = new StringTokenizer(br.readLine(), " ");
 
-			int a = Integer.parseInt(token.nextToken(br.readLine(), " "));
-			int b = Integer.parseInt(token.nextToken(br.readLine(), " "));
+			int a = Integer.parseInt(token.nextToken());
+			int b = Integer.parseInt(token.nextToken());
 
 			System.out.println("Case #"+"x: " + a + b);
 		}
