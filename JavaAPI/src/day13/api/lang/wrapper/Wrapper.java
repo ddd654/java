@@ -1,4 +1,4 @@
-package day13.api.lan.wrapper;
+package day13.api.lang.wrapper;
 
 public class Wrapper {
 	public static void main(String[] args) {
