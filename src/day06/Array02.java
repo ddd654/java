@@ -26,6 +26,7 @@ public class Array02 {
 		
 		System.out.println("--------------");
 		
+		
 		//배열 요소들의 합
 		int sum = 0;
 		for(int i =0; i < arr.length; i++) {
