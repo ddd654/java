@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.io.Reader;
 import java.util.StringTokenizer;
 
 //문제 제출할때, import도 필요
@@ -38,22 +39,42 @@ import java.util.StringTokenizer;
 //클래스 이름이 Main 이여야 문제 오류 안남
 public class Main {
 
-	// main 메서드
-	public static void main(String[] args) throws IOException { // 메인함수 예외발생 처리? 이게
+//	// main 메서드
+//	public static void main(String[] args) throws IOException { // 메인함수 예외발생 처리? 이게
+//
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+//
+//		int t = Integer.parseInt(br.readLine());
+//
+//		for (int i = 0; i < t; i++) {
+// 			문자열을 구분자로 분리한다
 
+//			StringTokenizer token = new StringTokenizer(br.readLine(), " ");
+//
+//			int a = Integer.parseInt(token.nextToken());
+//			int b = Integer.parseInt(token.nextToken());
+//
+//			int c = a + b;
+//
+//			System.out.println("Case #" + (i + 1) + ": " + a + " + " + b + " = " + c);
+//
+//		}
+//		br.close();
+//		bw.flush();
+//		bw.close();
+//
+//	}
+
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		int t = Integer.parseInt(br.readLine());
-
-		for (int i = 0; i < t; i++) {
-			StringTokenizer token = new StringTokenizer(br.readLine(), " ");
-
-			int a = Integer.parseInt(token.nextToken());
-			int b = Integer.parseInt(token.nextToken());
-
-			System.out.println("Case #" + (i + 1) + ": " + (a + b));
-		}
+		int a = Integer.parseInt(br.readLine());
+		
+		bw.write(a + "\n");
+		bw.flush(); //입력한거 콘솔창에 띄울때 둘다 필요
+		
 
 	}
 

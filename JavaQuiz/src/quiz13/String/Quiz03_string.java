@@ -14,4 +14,34 @@ public class Quiz03_string {
 			* 첫문장과, 마지막문장을 비교하며 중간으로 이동
 			* for문에서 charAt()을 사용해서 반대로 잘라 붙이세요. (or 빌더를 이용 하여 문자를 뒤집어 비교)
 			*/
+	
+	public static void main(String[] args) {
+		System.out.println(palindromeCheck("다시 합창 합시다"));
+	}
+	public static String palindromeCheck(String str) {
+		
+//		
+//		str = str.replace(" ", "");
+//		
+//		boolean a = new StringBuffer(str).reverse().toString().equals(str);
+//		
+////		System.out.println(a ? "회문" : "회문 x");
+//		
+//		return a ? "회문" : "회문 x";
+		
+		
+		//공백제거
+		str = str.replace(" ", "");
+		
+		for(int i = 0; i < str.length()/2; i++) {
+			if(str.charAt(i) == str.charAt(str.length()-1 -i)) { 
+				return"회문이 아닙니다";
+			}
+			
+		}
+		
+		return "회문";
+	}
 }
+
+
