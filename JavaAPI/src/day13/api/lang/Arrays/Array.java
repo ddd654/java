@@ -26,7 +26,7 @@ public class Array {
 		System.out.println(Arrays.toString(newArr2)); // 출력
 		
 		if(Arrays.equals(newArr, newArr2)) {
-			
+			System.out.println("1");
 		}
 	}
 
