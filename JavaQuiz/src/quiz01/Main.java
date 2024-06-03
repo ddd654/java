@@ -1,12 +1,3 @@
-package quiz01;
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.Reader;
-import java.util.StringTokenizer;
 
 //문제 제출할때, import도 필요
 
@@ -37,7 +28,7 @@ import java.util.StringTokenizer;
 //  br.close(); // 닫기
 
 //클래스 이름이 Main 이여야 문제 오류 안남
-public class Main {
+//public class Main {
 
 //	// main 메서드
 //	public static void main(String[] args) throws IOException { // 메인함수 예외발생 처리? 이게
@@ -65,17 +56,34 @@ public class Main {
 //		bw.close();
 //
 //	}
+package quiz01;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+//클래스 이름이 Main 이여야 문제 오류 안남
+public class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
 		int a = Integer.parseInt(br.readLine());
-		
-		bw.write(a + "\n");
-		bw.flush(); //입력한거 콘솔창에 띄울때 둘다 필요
-		
 
+		for (int i = 0; i < a; i++) {
+			for (int j = 0; j <= i; j++) {
+				bw.write("*");
+			}
+
+			bw.write("\n"); // 줄바꿈
+
+		}
+
+		bw.flush(); // 한번에 내보내기
+		bw.close();
+		br.close();
 	}
 
 }

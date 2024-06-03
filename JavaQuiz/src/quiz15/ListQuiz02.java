@@ -49,6 +49,7 @@ public class ListQuiz02 {
 					} else {
 						System.out.println(name + "님은 없습니다");
 					}
+					break;
 				}
 			} else if (menu == 4) {
 				// 삭제할 이름 입력받고, 이름과 동일한 User 객체를 삭제
@@ -61,6 +62,7 @@ public class ListQuiz02 {
 					if (vo.getName().equals(deleteName)) {
 						list.remove(i);
 						System.err.println("삭제");
+						break;
 					}
 				}
 
