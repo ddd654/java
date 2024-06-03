@@ -63,23 +63,24 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
 
 //클래스 이름이 Main 이여야 문제 오류 안남
+//혹시 파일 속에 Main 클래스가 있으면 오류
 public class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
+		//숫자용
 		int a = Integer.parseInt(br.readLine());
+		int b = Integer.parseInt(br.readLine());
 
-		for (int i = 0; i < a; i++) {
-			for (int j = 0; j <= i; j++) {
-				bw.write("*");
-			}
-
-			bw.write("\n"); // 줄바꿈
-
-		}
+		//문자용
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		String c = st.nextToken();
+		
+		bw.write(a + " " + b + " " + c +"\n"); // 줄바꿈
 
 		bw.flush(); // 한번에 내보내기
 		bw.close();
