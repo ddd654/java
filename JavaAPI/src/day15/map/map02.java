@@ -1,7 +1,12 @@
 package day15.map;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class map02 {
 	public static void main(String[] args) {
@@ -23,6 +28,57 @@ public class map02 {
 			 * 4. 입력받은 아이디가 맵에 입력된 키값이 아니라면 
 			 *    "아이디가 존재하지 않습니다"를 출력하세요.
 			 */
+			
+			
+			Scanner scan = new Scanner(System.in);
+			
+			
+			
+			while(true) {
+				System.out.println("아이디 입력");
+				String inputId = scan.next();
+				
+				if(users.containsKey(inputId)) {
+					System.out.println("비밀번호 입력");
+					String inputPassword = scan.next();
+					
+					String pass = users.get(inputId);
+					if(inputPassword.equals(pass)) {
+						System.out.println("로그인 성공");
+						break;
+					}else {
+						System.out.println("비밀번호가 틀렸습니다");
+					}
+					
+					
+				} else {
+					System.out.println("아이디가 존재하지 않습니다.");
+					break;
+				}
+				
+			}
+			
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+//			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+			
+			
+			
+			
+			
 			
 			
 			
