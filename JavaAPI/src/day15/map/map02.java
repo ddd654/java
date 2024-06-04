@@ -43,6 +43,8 @@ public class map02 {
 					String inputPassword = scan.next();
 					
 					String pass = users.get(inputId);
+					
+					
 					if(inputPassword.equals(pass)) {
 						System.out.println("로그인 성공");
 						break;

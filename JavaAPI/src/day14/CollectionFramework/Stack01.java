@@ -32,5 +32,8 @@ public class Stack01 {
 		//스택이 비어있는지 확인
 		System.out.println(stack.isEmpty()); 
 		
+
+
+
 	}
 }
