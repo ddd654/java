@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.OutputStreamWriter;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -24,15 +25,22 @@ public class Quiz_buffer02 {
 
 		// Date사용, Data객체 본인이 생성, ArrayList사용하기
 
-		String file = "2024_06_04_data.csv";
+		// 날짜 year month day
+
+		LocalDate today = LocalDate.now();
+		int year = today.getYear();
+		int month = today.getMonthValue();
+
+		int day = today.getDayOfMonth();
+		System.out.println(year + " " + month + " " + day);
+
+		String file = year + "_" + month + "_" + day + "_" + "date.csv";
 		String path = "C:\\Users\\user\\Desktop\\course\\java\\upload\\" + file;
 
 		BufferedReader br = null;
 		BufferedWriter bw = null;
 
-		List<String> list1 = new ArrayList<String>();
-		list1.add("사과");
-		System.out.println(list1.toString());
+		List<Data> list1 = new ArrayList<>();
 
 		try {
 			br = new BufferedReader(new FileReader(path));
@@ -44,38 +52,29 @@ public class Quiz_buffer02 {
 			// null이 아닐때까지 반복
 			while ((str1 = br.readLine()) != null) {
 				String[] arr1 = str1.split(",");
-				bw.write(str1+ "\n");
+
+				if (arr1.length >= 4) {
+
+					String name = arr1[0];
+					String age = arr1[1];
+					String mail = arr1[2];
+					String direction = arr1[3];
+
+					Data data = new Data(name, age, mail, direction);
+					list1.add(data);
+				}
 
 			}
-			bw.flush(); // 한줄 출력
-			
-			// null이 아닐때까지 반복
-//			while ((str1 = br.readLine()) != null) {
-//				String[] arr1 = str1.split(",");
-//				System.out.println(Arrays.toString(arr1));
-//
-////							// 리스트에 넣기
-////							for (String str2 : arr1) {
-////								list1.add(str2);
-////							}
-//				bw.write(str1);
-//
+
+			for (Data data : list1) {
+				System.out.println(data); // 데이터 출력하기
+			}
+
+//			for (int i = 0; i < list1.size(); i++) {
+//				Data data = list1.get(i);
+//				System.out.println(data.toString());
 //			}
-//			bw.flush(); // 한줄 출력
 
-			
-			
-//				for (String str3 : list1) {
-//					System.out.println(str3);
-//				}
-
-//				StringTokenizer st = new StringTokenizer(str1, ",");
-//				String[] arr1 = st;
-//				
-//				System.out.println(st);
-
-			
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
