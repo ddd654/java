@@ -28,7 +28,7 @@ public class CreateDirectory {
 			//
 			if(file123.exists()) {
 				file123.delete(); //빈폴더일때만 삭제
-				file123.deleteOnExit(); // 하위 자식으로있는 자료, 파일 한번에 다 삭제
+				
 				System.out.println("삭제됨");
 			} else {
 				System.out.println("폴더 삭제 안됨");
