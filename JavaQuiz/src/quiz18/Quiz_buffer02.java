@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.OutputStreamWriter;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -28,13 +29,16 @@ public class Quiz_buffer02 {
 		// 날짜 year month day
 
 		LocalDate today = LocalDate.now();
-		int year = today.getYear();
-		int month = today.getMonthValue();
+//		int year = today.getYear();
+//		int month = today.getMonthValue();
+//		int day = today.getDayOfMonth();
+//		System.out.println(year + " " + month + " " + day);
 
-		int day = today.getDayOfMonth();
-		System.out.println(year + " " + month + " " + day);
+		String now = today.format(DateTimeFormatter.ofPattern("yyyy_MM_dd"));
+		System.out.println(now);
 
-		String file = year + "_" + month + "_" + day + "_" + "date.csv";
+		String file = now + "_data.csv";
+
 		String path = "C:\\Users\\user\\Desktop\\course\\java\\upload\\" + file;
 
 		BufferedReader br = null;
@@ -44,7 +48,8 @@ public class Quiz_buffer02 {
 
 		try {
 			br = new BufferedReader(new FileReader(path));
-			bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+//			bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
 			String str1;
 			System.out.println(br.readLine()); // 한줄 읽기
@@ -53,16 +58,19 @@ public class Quiz_buffer02 {
 			while ((str1 = br.readLine()) != null) {
 				String[] arr1 = str1.split(",");
 
-				if (arr1.length >= 4) {
+				Data data = new Data(arr1[0], arr1[1], arr1[2], arr1[3]);
+				list1.add(data);
 
-					String name = arr1[0];
-					String age = arr1[1];
-					String mail = arr1[2];
-					String direction = arr1[3];
+//				if (arr1.length >= 4) {
+//
+//					String name = arr1[0];
+//					String age = arr1[1];
+//					String mail = arr1[2];
+//					String direction = arr1[3];
 
-					Data data = new Data(name, age, mail, direction);
-					list1.add(data);
-				}
+//					Data data = new Data(name, age, mail, direction);
+//					list1.add(data);
+//				}
 
 			}
 
