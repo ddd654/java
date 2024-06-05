@@ -1,5 +1,6 @@
 package day15.List_queue_set;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -8,6 +9,8 @@ public class LinkedList01 {
 		
 		List<String> list = new LinkedList<>();
 		
+		
+
 		//ArrayList와 사용방법이 동일
 		//값 추가
 
@@ -28,5 +31,11 @@ public class LinkedList01 {
 		
 		//값 삭제
 		list.remove(0);
+		
+		List<String> list1 = new ArrayList<String>();
+		list1.add("사과만");
+		System.out.println(list1.toString());
+		
+		
 	}
 }
