@@ -18,16 +18,16 @@ public class Quiz_Regex03 {
 		BufferedReader br = null;
 
 		String p1 = "\\d{8}-\\d{2}-\\d{12,13}";
-		String p2 = "건담[가-힣]* [가-힝]점";
-		String p3 = "\\[[A-Z가-힣]\\]";
-		String p4 = "[0-9],*[0-9]원";
+		String p2 = "건담[가-힣]* [가-힝]+";
+		String p3 = "\\[[A-Z가-힣]+\\]";
+		String p4 = "[0-9]+,*[0-9]+원";
 
 		try {
 			br = new BufferedReader(new FileReader(path));
 
 			String str;
 			while ((str = br.readLine()) != null) {
-				System.err.println(str);
+				System.out.println(str);
 			}
 			
 			Matcher m1 = Pattern.compile(p1).matcher(str);
@@ -36,8 +36,19 @@ public class Quiz_Regex03 {
 			Matcher m4 = Pattern.compile(p4).matcher(str);
 			
 			
-			if(m1.find() ) {
+			if(m1.find() && m2.find() && m3.find() && m4.find()) {
 				System.out.println(m1.group());
+				System.out.println(m2.group());
+				System.out.println(m3.group());
+				System.out.println(m4.group());
+				
+				int start = m3.end();
+				int end = m4.start();
+				
+				System.err.println(str.substring(start, end).trim());
+				
+				System.out.println("-------------");
+				
 			}
 			
 			
