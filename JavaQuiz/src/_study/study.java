@@ -2,15 +2,20 @@ package _study;
 
 public class study {
 	public static void main(String[] args) {
-
-		System.out.println(solution());
-
+		
+		solution();
+		
 	}
 
-	public double solution(int[] numbers) {
+	public static double solution(int[] numbers) {
 		double answer = 0;
+
+		for (int i = 0; i <= numbers.length; i++) {
+			answer += numbers[i];
+		}
+
 		return answer;
-		
+
 	}
 
 }
