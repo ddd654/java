@@ -1,6 +1,6 @@
 package day17.thread.basic;
 
-public class MainClass1 {
+public class MyClassName9 {
 	public static void main(String[] args) {
 		
 		
