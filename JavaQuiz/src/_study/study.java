@@ -1,17 +1,21 @@
 package _study;
 
+import java.util.Arrays;
+
 public class study {
 	public static void main(String[] args) {
 
-		System.out.println(solution(5));
+		System.out.println(Arrays.toString(solution(5)));
 
 	}
 
-	public static int solution(int n) {
-		int answer = 0;
+	public static int[] solution(int n) {
+		int[] answer = new int[n];
 
-		for (int i = 2; i <= n; i += 2) {
-			answer += i;
+		for (int i = 0; i < answer.length; i++) {
+			
+			answer[i] = i;
+			
 		}
 
 		return answer;
