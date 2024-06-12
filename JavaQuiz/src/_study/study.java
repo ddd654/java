@@ -5,20 +5,24 @@ import java.util.Arrays;
 public class study {
 	public static void main(String[] args) {
 
-		System.out.println(Arrays.toString(solution(5)));
+		int n = 11;
+		int[] answer = new int[(n+1)/2];
 
-	}
-
-	public static int[] solution(int n) {
-		int[] answer = new int[n];
-
-		for (int i = 0; i < answer.length; i++) {
-			
-			answer[i] = i;
-			
+		for (int i = 0; i < answer.length; i = i + 1) {
+			answer[i] = 2 * i + 1;
 		}
 
-		return answer;
+		System.out.println(Arrays.toString(answer));
+
 	}
+//
+//	public static int[] solution(int n) {
+////		int[] answer = {};
+//		int[] answer = new int[n];
+//
+//		answer[0] =1;
+//		
+//		return answer;
+//	}
 
 }
