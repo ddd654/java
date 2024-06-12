@@ -2,7 +2,7 @@ package _study;
 
 import java.util.Arrays;
 
-public class study {
+public class Quiz_홀수 {
 	public static void main(String[] args) {
 
 		int n = 11;
