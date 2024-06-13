@@ -38,7 +38,7 @@ public class ArrayEx {
 		//마지막 인덱스
 		System.out.println("배열의 마지막 상자:" + arr[arr.length -1]);
 		
-		System.out.println("------------------------------");
+		System.out.println("`------------------------------");
 		
 		//배열의 선언과 생성을 동시에
 		int[] arr2 = new int[7];
