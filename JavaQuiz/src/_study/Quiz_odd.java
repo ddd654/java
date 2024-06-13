@@ -15,7 +15,7 @@ public class Quiz_odd {
 		System.out.println(Arrays.toString(answer));
 
 	}
-//
+
 //	public static int[] solution(int n) {
 ////		int[] answer = {};
 //		int[] answer = new int[n];
