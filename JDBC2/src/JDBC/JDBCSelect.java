@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class JDBCSelect {
 	public static void main(String[] args) {
 
+		
 		// 나이가 10 이상인 데이터 조회
 
 		// 1. sql 접속 정보를 선언
@@ -23,7 +24,7 @@ public class JDBCSelect {
 
 		String sql = "SELECT * FROM MEMBER WHERE AGE >= ?";
 
-		Connection conn = null;
+		Connection conn =null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null; // select는 결과를 조회해서 처리할 resultset객체가 필요
 
