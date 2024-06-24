@@ -29,7 +29,6 @@ public class JDBCSelect {
 		ResultSet rs = null; // select는 결과를 조회해서 처리할 resultset객체가 필요
 
 		try {
-
 			Class.forName("oracle.jdbc.OracleDriver");
 			
 			
