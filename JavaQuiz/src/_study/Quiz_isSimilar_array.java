@@ -23,19 +23,11 @@ public class Quiz_isSimilar_array {
 		int answer = 0;
 
 		// 다른 방법 찾기
-		
-		for(String str1 : s1){
-			
+
+		for (String str1 : s1) {
+
 		}
-				
-		
-		
-		
-		
-		
-		
-		
-		
+
 		// 배열이 같으면
 		if (s1.length == s2.length) {
 			for (int i = 0; i < s1.length; i++) {
