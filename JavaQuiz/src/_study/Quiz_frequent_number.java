@@ -8,35 +8,18 @@ public class Quiz_frequent_number {
 		// 정수 배열 array가 매개변수로 주어질 때, 최빈값을 return 하도록
 		// solution 함수를 완성해보세요. 최빈값이 여러 개면 -1을 return 합니다.
 
-		int[] array = { 1, 2, 3, 3, 3, 4 };
-		System.out.println(solution(array));
+		int[] array = { 1, 3, 3, 2, 2, 3, 4 };
+		System.out.println(Arrays.toString(solution(array)));
+
 	}
 
-	public static int solution(int[] array) {
+	public static int[] solution(int[] array) {
 		int answer = 0;
 
-		// 길이만큼 값을 하나씩 확인, 같은 값을 카운트?
-		// 첫번쨰 배열값을 하나하나 비교?
+		// [ 10, 20, 10, 20, 3, 4]
+		// 값을 정렬하고서, 앞값과 뒷값이 같은게 많으면 -1
+		Arrays.sort(array);
 
-//		for (int i = 0; i < array.length; i++) {
-//			// 배열 값 하나를 비교
-//			for (int j = 1; j < array.length; j++) {
-//				// 배열 값 중복 카운트
-//				if (array[i] == array[j]) { // i가 0일때 j는 1,2,3,4...
-//					answer += 1;
-//				}
-//			}
-//
-//		}
-
-		for (int i = 0; i < array.length; i++) {
-
-			if (array[i]) {
-
-			}
-
-		}
-
-		return answer;
+		return array;
 	}
 }
