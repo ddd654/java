@@ -2,7 +2,7 @@ package quiz01;
 
 import java.util.Arrays;
 
-public class Main_quiz_string {
+public class For_quiz_string {
 	public static void main(String[] args) {
 		// 문자열.메서드명() 류
 		String str = "안녕~";
