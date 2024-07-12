@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.xml.sax.HandlerBase;
 
 public class Quiz_frequent_number {
 	public static void main(String[] args) {
