@@ -1,0 +1,33 @@
+package day08;
+
+public class Object01_calculate {
+	public static void main(String[] args) {
+
+		// 계산기 만들기
+		// 기존에 쓰던 방법
+		System.out.println(add(1));
+		System.out.println(add(2));
+		System.out.println(add(3));
+		System.out.println(add(4));
+		
+		System.out.println("2번 계산기");
+
+		System.out.println(add2(10));
+		System.out.println(add2(20));
+
+	}
+
+	static int result = 0;
+
+	static int add(int a) {
+		result += a;
+		return result;
+	}
+
+	static int result2 = 0;
+
+	static int add2(int a) {
+		result2 += a;
+		return result2;
+	}
+}
