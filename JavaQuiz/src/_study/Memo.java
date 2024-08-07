@@ -1,11 +1,35 @@
 package _study;
 
-
 public class Memo {
-	//자료형, 타입캐스팅, 조건, 반복, 배열, 리스트
-	
+	// 자료형, 타입캐스팅, 조건, 반복, 배열, 리스트
+
 	public static void main(String[] args) {
-		
-		System.out.println(12321);
+
+		Calculator c1 = new Calculator();
+		System.out.println(c1.PI);
+
+		Calculator c2 = new Calculator();
+		System.out.println(c2.PI);
+
+		System.out.println(Calculator.PI);
+
+	}
+}
+
+class Calculator {
+	static double PI = 3.14;
+	int left, right;
+
+	public void setOprands(int left, int right) {
+		this.left = left;
+		this.right = right;
+	}
+
+	public void sum() {
+		System.out.println(this.left + this.right);
+	}
+
+	public void avg() {
+		System.out.println((this.left + this.right) / 2);
 	}
 }

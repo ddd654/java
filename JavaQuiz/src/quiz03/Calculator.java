@@ -16,4 +16,9 @@ public class Calculator {
 		return result;
 	}
 
+	public void setOp(int i, int j) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
