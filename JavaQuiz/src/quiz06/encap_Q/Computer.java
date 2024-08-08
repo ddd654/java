@@ -1,6 +1,5 @@
 package quiz06.encap_Q;
 
-import day09.encap.Object.Chef;
 
 public class Computer {
 

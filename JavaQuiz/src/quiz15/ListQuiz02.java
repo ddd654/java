@@ -14,7 +14,7 @@ public class ListQuiz02 {
 
 		List<UserVO> list = new ArrayList<>();
 		
-		UserManage manage = new UserManage();
+//		UserManage manage = new UserManage();
 
 		
 		//인터페이스를 끼고 호출
@@ -87,10 +87,10 @@ public class ListQuiz02 {
 				
 				
 				
-				if(!flag) {
-					System.out.println("삭제할 이름이 없습니다");
-				}
-				
+//				if(!flag) {
+//					System.out.println("삭제할 이름이 없습니다");
+//				}
+//
 //				for (int i = 0; i < list.size(); i++) {
 //					String deleteName = scan.next();
 //

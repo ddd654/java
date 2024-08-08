@@ -81,9 +81,9 @@ public class Quiz_Queue02 {
 	public static void match(int match, Queue<Member> member) {
 		// 5명이 찼을때 전달된다 
 
-		while (member.isEmpty() == 5) {
-			System.err.println(member.poll());
-		}
+//		while (member.isEmpty() == 5) {
+//			System.err.println(member.poll());
+//		}
 	}
 
 }

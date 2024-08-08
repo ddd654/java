@@ -12,21 +12,13 @@ public class Quiz11 {
 		int c = scan.nextInt();
 		
 		if(a < b & b < c) {
-			System.out.println(a, b, c);
+			System.out.println(a + b + c);
 		} else {
 			System.out.println(c);
 
 		}
-		
-		switch (a) {
-		case :
-			
-			break;
 
-		default:
-			break;
-		}
-		
+
 		
 	}
 }

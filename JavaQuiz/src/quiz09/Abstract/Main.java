@@ -16,7 +16,22 @@ public class Main {
 		
 		Marine m = new Marine(0, 0, 0);
 		Tank t = new Tank();
-		DropShip d = new DropShip();
+		DropShip d = new DropShip() {
+			@Override
+			public void location() {
+
+			}
+
+			@Override
+			public void move(int x, int y) {
+
+			}
+
+			@Override
+			public void stop() {
+
+			}
+		};
 		
 		m.location();
 		

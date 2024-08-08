@@ -86,10 +86,10 @@ public class ListQuiz01 {
 		//
 		for(int i = 0; i < list_2.size(); i++) {
 			
-			if(list_2.get(i).getName()) {
-				
-				
-			}
+//			if(list_2.get(i).getName()) {
+//
+//
+//			}
 			
 		}
 		
