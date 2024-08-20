@@ -10,8 +10,8 @@ public class Quiz_Emergency {
 		// 크기 비교 > 큰 수 부터 1로 바뀐다
 
 		for (int i = 0; i < answer.length; i++) {
-			
-		
+		  
+		  
 		}
 
 		return answer;
