@@ -7,7 +7,7 @@ public class Memo {
 
     public static int[] solution(int[] numbers) {
         int[] answer = new int[numbers.length]; //배열 크기 정하기
-        //뭔가의 코드
+        //코드
         for (int i = 0; i < numbers.length; i++) {
 
             if (numbers[i] == ){
