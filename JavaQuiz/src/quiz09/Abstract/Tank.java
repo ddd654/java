@@ -1,14 +1,12 @@
 package quiz09.Abstract;
 
 
+public class Tank extends Unit {
 
-public class Marine extends Unit {
-	
-	public static int attack = 6;
-	public static int armor = 0;
-	
-	public Marine(int x, int y) {
-		super(x, y, 60);
+	public boolean modeFlag = false;
+
+	public Tank(int x, int y) {
+		super(x, y, 200);
 	}
 
 	@Override
@@ -21,5 +19,15 @@ public class Marine extends Unit {
 		this.x = x;
 		this.y = y;
 	}
-	
+
+	public void changeMode() {
+		modeFlag = modeFlag ? false : true;
+	}
+
+
+
+
+
+
+
 }

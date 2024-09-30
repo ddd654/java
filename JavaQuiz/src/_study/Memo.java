@@ -10,9 +10,7 @@ public class Memo {
         //코드
         for (int i = 0; i < numbers.length; i++) {
 
-            if (numbers[i] == ){
 
-            }
 
         }
         return answer;
